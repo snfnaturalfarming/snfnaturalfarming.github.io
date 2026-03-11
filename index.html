@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
     <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="static/css/styles.css">
     <!-- Lightbox CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
     <!-- FontAwesome -->
@@ -22,7 +22,7 @@
     <header class="header">
         <div class="container header-container">
             <a href="#" class="logo">
-                <img src="{{ url_for('static', filename='images/snf_logo_premium.png') }}" alt="SNF Natural Farming Logo" width="150" height="60">
+                <img src="static/images/snf_logo_premium.png" alt="SNF Natural Farming Logo" width="150" height="60">
             </a>
             <nav class="nav-links">
                 <a href="#home">Home</a>
@@ -40,7 +40,7 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-bg" style="background-image: url('{{ url_for('static', filename='images/chilli2.jpg') }}');"></div>
+        <div class="hero-bg" style="background-image: url('static/images/chilli2.jpg');"></div>
         <div class="hero-overlay"></div>
         <div class="container hero-content">
             <h1 class="hero-headline">SNF Natural Farming</h1>
@@ -97,7 +97,7 @@
                 </div>
             </div>
             <div class="about-image pop-in">
-                <img src="{{ url_for('static', filename='images/chillies.jpg') }}" alt="Organic Chilli Field at SNF Natural Farming" class="img-about" loading="lazy" width="600" height="400" style="object-fit: cover;">
+                <img src="static/images/chillies.jpg" alt="Organic Chilli Field at SNF Natural Farming" class="img-about" loading="lazy" width="600" height="400" style="object-fit: cover;">
             </div>
         </div>
     <!-- Why Choose Us Section -->
@@ -149,7 +149,7 @@
                 <div class="product-card fade-in-up">
                     <div class="product-badge badge-organic">100% Organic</div>
                     <div class="product-image">
-                        <img src="{{ url_for('static', filename='images/media__1772786669111.jpg') }}" alt="Sun-dried Organic Chillies" loading="lazy" width="400" height="250" style="object-fit: cover;">
+                        <img src="static/images/media__1772786669111.jpg" alt="Sun-dried Organic Chillies" loading="lazy" width="400" height="250" style="object-fit: cover;">
                     </div>
                     <div class="product-info">
                         <h3>Dry Chillies</h3>
@@ -164,7 +164,7 @@
                 <div class="product-card fade-in-up delay-1">
                     <div class="product-badge badge-fresh">Farm Fresh</div>
                     <div class="product-image">
-                        <img src="{{ url_for('static', filename='images/fresh_red_chillies.webp') }}" alt="Fresh Red Chillies on plant" loading="lazy" width="400" height="250" style="object-fit: cover;">
+                        <img src="static/images/fresh_red_chillies.webp" alt="Fresh Red Chillies on plant" loading="lazy" width="400" height="250" style="object-fit: cover;">
                     </div>
                     <div class="product-info">
                         <h3>Fresh Red Chillies</h3>
@@ -179,7 +179,7 @@
                 <div class="product-card fade-in-up delay-2">
                     <div class="product-badge badge-special">Special Blend</div>
                     <div class="product-image">
-                        <img src="{{ url_for('static', filename='images/media__1772786675923.jpg') }}" alt="Curry Chilli Powder" loading="lazy" width="400" height="250" style="object-fit: cover;">
+                        <img src="static/images/media__1772786675923.jpg" alt="Curry Chilli Powder" loading="lazy" width="400" height="250" style="object-fit: cover;">
                     </div>
                     <div class="product-info">
                         <h3>Curry Chilli Powder</h3>
@@ -194,7 +194,7 @@
                 <div class="product-card fade-in-up delay-3">
                     <div class="product-badge badge-pure">Pure & Natural</div>
                     <div class="product-image">
-                        <img src="{{ url_for('static', filename='images/media__1772786684202.jpg') }}" alt="Normal Chilli Powder" loading="lazy" width="400" height="250" style="object-fit: cover;">
+                        <img src="static/images/media__1772786684202.jpg" alt="Normal Chilli Powder" loading="lazy" width="400" height="250" style="object-fit: cover;">
                     </div>
                     <div class="product-info">
                         <h3>Normal Chilli Powder</h3>
@@ -254,8 +254,8 @@
             
             <div class="awards-gallery pop-in delay-1">
                 <div class="award-item">
-                    <a href="{{ url_for('static', filename='images/media__1772788666788.jpg') }}" data-lightbox="awards" data-title="Award Press Feature">
-                        <img src="{{ url_for('static', filename='images/media__1772788666788.jpg') }}" alt="Award Press Feature" loading="lazy" width="300" height="220" style="object-fit: cover;">
+                    <a href="static/images/media__1772788666788.jpg" data-lightbox="awards" data-title="Award Press Feature">
+                        <img src="static/images/media__1772788666788.jpg" alt="Award Press Feature" loading="lazy" width="300" height="220" style="object-fit: cover;">
                     </a>
                     <div class="award-caption">
                         <h4>Press Feature</h4>
@@ -263,8 +263,8 @@
                     </div>
                 </div>
                 <div class="award-item">
-                    <a href="{{ url_for('static', filename='images/media__1772788673974.jpg') }}" data-lightbox="awards" data-title="Receiving Award on Stage">
-                        <img src="{{ url_for('static', filename='images/media__1772788673974.jpg') }}" alt="Receiving Award on Stage" loading="lazy" width="300" height="220" style="object-fit: cover;">
+                    <a href="static/images/media__1772788673974.jpg" data-lightbox="awards" data-title="Receiving Award on Stage">
+                        <img src="static/images/media__1772788673974.jpg" alt="Receiving Award on Stage" loading="lazy" width="300" height="220" style="object-fit: cover;">
                     </a>
                     <div class="award-caption">
                         <h4>State Level Award</h4>
@@ -272,8 +272,8 @@
                     </div>
                 </div>
                 <div class="award-item">
-                    <a href="{{ url_for('static', filename='images/media__1772788680581.jpg') }}" data-lightbox="awards" data-title="Newspaper Feature on Organic Farming">
-                        <img src="{{ url_for('static', filename='images/media__1772788680581.jpg') }}" alt="Newspaper Feature on Organic Farming" loading="lazy" width="300" height="220" style="object-fit: cover;">
+                    <a href="static/images/media__1772788680581.jpg" data-lightbox="awards" data-title="Newspaper Feature on Organic Farming">
+                        <img src="static/images/media__1772788680581.jpg" alt="Newspaper Feature on Organic Farming" loading="lazy" width="300" height="220" style="object-fit: cover;">
                     </a>
                     <div class="award-caption">
                         <h4>Media Recognition</h4>
@@ -281,8 +281,8 @@
                     </div>
                 </div>
                 <div class="award-item">
-                    <a href="{{ url_for('static', filename='images/media__1772788687113.jpg') }}" data-lightbox="awards" data-title="Award Press Snippet">
-                        <img src="{{ url_for('static', filename='images/media__1772788687113.jpg') }}" alt="Award Press Snippet" loading="lazy" width="300" height="220" style="object-fit: cover;">
+                    <a href="static/images/media__1772788687113.jpg" data-lightbox="awards" data-title="Award Press Snippet">
+                        <img src="static/images/media__1772788687113.jpg" alt="Award Press Snippet" loading="lazy" width="300" height="220" style="object-fit: cover;">
                     </a>
                     <div class="award-caption">
                         <h4>Outstanding Farmer</h4>
@@ -393,7 +393,7 @@
             <div class="gallery-grid">
                 <div class="gallery-item">
                     <div class="gallery-img-wrapper">
-                        <img src="{{ url_for('static', filename='images/farmgallery2.jpeg') }}" alt="Farmer training and farm visits" loading="lazy" width="400" height="300" style="object-fit: cover;">
+                        <img src="static/images/farmgallery2.jpeg" alt="Farmer training and farm visits" loading="lazy" width="400" height="300" style="object-fit: cover;">
                         <div class="gallery-overlay">
                             <p class="gallery-caption">Farmer training and farm visits</p>
                         </div>
@@ -401,7 +401,7 @@
                 </div>
                 <div class="gallery-item">
                     <div class="gallery-img-wrapper">
-                        <img src="{{ url_for('static', filename='images/farmgallery3.jpeg') }}" alt="Harvested chillies drying" loading="lazy" width="400" height="300" style="object-fit: cover;">
+                        <img src="static/images/farmgallery3.jpeg" alt="Harvested chillies drying" loading="lazy" width="400" height="300" style="object-fit: cover;">
                         <div class="gallery-overlay">
                             <p class="gallery-caption">Harvested chillies drying</p>
                         </div>
@@ -409,7 +409,7 @@
                 </div>
                 <div class="gallery-item">
                     <div class="gallery-img-wrapper">
-                        <img src="{{ url_for('static', filename='images/farmgallery4.jpeg') }}" alt="Natural chilli cultivation" loading="lazy" width="400" height="300" style="object-fit: cover;">
+                        <img src="static/images/farmgallery4.jpeg" alt="Natural chilli cultivation" loading="lazy" width="400" height="300" style="object-fit: cover;">
                         <div class="gallery-overlay">
                             <p class="gallery-caption">Natural chilli cultivation</p>
                         </div>
@@ -417,7 +417,7 @@
                 </div>
                 <div class="gallery-item">
                     <div class="gallery-img-wrapper">
-                        <img src="{{ url_for('static', filename='images/farmgallery7.jpeg') }}" alt="Traditional natural farming" loading="lazy" width="400" height="300" style="object-fit: cover;">
+                        <img src="static/images/farmgallery7.jpeg" alt="Traditional natural farming" loading="lazy" width="400" height="300" style="object-fit: cover;">
                         <div class="gallery-overlay">
                             <p class="gallery-caption">Traditional natural farming</p>
                         </div>
@@ -510,7 +510,7 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-brand">
-                <img src="{{ url_for('static', filename='images/snf_logo_premium.png') }}" class="footer-logo" alt="SNF Logo" loading="lazy" width="150" height="60">
+                <img src="static/images/snf_logo_premium.png" class="footer-logo" alt="SNF Logo" loading="lazy" width="150" height="60">
                 <p>100% Natural & Organic Farming.<br>Zero Chemicals. Zero Pesticides.</p>
                 <p class="footer-location">📍 Pedakurapadu Village, Palnadu District, Andhra Pradesh</p>
                 <p class="footer-phone">📞 +91 8790682858</p>
@@ -554,6 +554,6 @@
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="static/js/script.js"></script>
 </body>
 </html>
