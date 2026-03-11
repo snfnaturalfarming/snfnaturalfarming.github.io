@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNF Natural Farming | Award-Winning Organic Chillies</title>
+    <meta name="description" content="SNF Natural Farming offers award-winning, 100% organic dry chillies, fresh red chillies, and pure chilli powder grown without chemicals or pesticides for over 10 years.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="{{ url_for('static', filename='images/snf_logo_premium.png') }}" alt="SNF Natural Farming Logo" width="150" height="60">
+            </a>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#products">Products</a>
+                <a href="#awards">Awards</a>
+                <a href="#videos">Videos</a>
+                <a href="#contact" class="btn btn-nav-contact">Contact Us</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg" style="background-image: url('{{ url_for('static', filename='images/chilli2.jpg') }}');"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-headline">SNF Natural Farming</h1>
+            
+            <div class="trust-badges fade-in-up delay-1">
+                <span class="trust-badge">🏆 10+ Years Experience</span>
+                <span class="trust-badge">🌿 Zero Chemicals</span>
+                <span class="trust-badge">🥇 National Award Winners</span>
+            </div>
+            
+            <p class="tagline fade-in-up delay-1">Pure From Farm to Table. Award-Winning Organic Excellence.</p>
+            <div class="hero-buttons fade-in-up delay-2">
+                <a href="https://wa.me/919581682858" target="_blank" class="btn btn-primary btn-lg">💬 Order via WhatsApp</a>
+                <a href="#products" class="btn btn-hero-secondary btn-lg">🛍️ View Products</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Wave Divider Top of About -->
+    <div class="wave-divider-top">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container about-container">
+            <div class="about-text slide-in-left">
+                <h2 class="section-title">Our Story</h2>
+                <h3 class="section-subtitle">A Decade of Dedication to Pure, Natural Farming</h3>
+                <p>Located in the heart of Palnadu District, Pedakurapadu village, SNF Natural Farming is born from a deep-rooted passion for the earth and the health of our community. For over 10 years, we have committed ourselves entirely to 100% natural and organic farming practices.</p>
+                
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <span class="icon">🌱</span>
+                        <p>10+ Years Natural Farming</p>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="icon">🌶️</span>
+                        <p>Premium Quality Chillies</p>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="icon">🏆</span>
+                        <p>National & International Awards</p>
+                    </div>
+                </div>
+
+                <p>We specialize in cultivating the finest chillies without harmful chemicals or synthetic fertilizers. Our award-winning approach ensures every chilli we grow, dry, and grind is packed with authentic flavor and vibrant color.</p>
+                
+                <div class="awards-mention">
+                    <a href="#awards" class="btn-text-arrow"><span>View Our Appreciations</span> <span class="arrow">&rarr;</span></a>
+                </div>
+            </div>
+            <div class="about-image pop-in">
+                <img src="{{ url_for('static', filename='images/chillies.jpg') }}" alt="Organic Chilli Field at SNF Natural Farming" class="img-about" loading="lazy" width="600" height="400" style="object-fit: cover;">
+            </div>
+        </div>
+    <!-- Why Choose Us Section -->
+    <section id="features" class="features section-padding">
+        <div class="container text-center">
+            <h2 class="section-title">Why Choose SNF Natural Farming?</h2>
+            <p class="section-subtitle">The principles that make our chillies exceptional</p>
+            
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon"><i class="fa-solid fa-leaf"></i></div>
+                    <h4>100% Chemical Free</h4>
+                    <p>No synthetic fertilizers, no pesticides. Pure nature from seed to harvest.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card fade-in-up delay-1">
+                    <div class="feature-icon"><i class="fa-solid fa-award"></i></div>
+                    <h4>Award Winning Quality</h4>
+                    <p>Recognized nationally and internationally for organic farming excellence.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card fade-in-up delay-2">
+                    <div class="feature-icon"><i class="fa-solid fa-tractor"></i></div>
+                    <h4>Farm to Table Direct</h4>
+                    <p>We grow, dry, grind and deliver directly. No middlemen. Pure & Fresh.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave Divider Top of Products -->
+    <div class="wave-divider-products">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M985.66,92.83C906.67,72,823.78,31,741.39,14.14,659.09-3.2,573.29-2.19,490.9,14.53,433.1,26.26,376.94,45.6,318.9,56.39c-67.81,12.61-144.29,19.8-214.34,3l-.56,0H0V120H1200V0C1132.19,15.82,1055.71,74.35,985.66,92.83Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+    <!-- Products Section -->
+    <section id="products" class="products section-padding bg-cream bg-pattern">
+        <div class="container text-center">
+            <h2 class="section-title">Our Organic Products</h2>
+            <p class="section-subtitle">Grown naturally for 10+ years — No chemicals, No pesticides, Only pure goodness</p>
+            
+            <div class="product-grid">
+                <!-- Product 1: Dry Chillies -->
+                <div class="product-card fade-in-up">
+                    <div class="product-badge badge-organic">100% Organic</div>
+                    <div class="product-image">
+                        <img src="{{ url_for('static', filename='images/media__1772786669111.jpg') }}" alt="Sun-dried Organic Chillies" loading="lazy" width="400" height="250" style="object-fit: cover;">
+                    </div>
+                    <div class="product-info">
+                        <h3>Dry Chillies</h3>
+                        <p>Sun-dried organic chillies, naturally dried without any chemicals. Rich color, intense aroma, and bold flavor.</p>
+                        <a href="https://wa.me/919581682858?text=Hello! I would like to ask for Bulk Price for Dry Chillies." target="_blank" class="bulk-price-tag">💰 Ask for Bulk Price &rarr; WhatsApp</a>
+                        <p class="trust-line"><span class="icon-leaf">♻️</span> Grown on our farm | Chemical-free | 10+ years of organic farming</p>
+                        <a href="https://wa.me/919581682858?text=Hello! I would like to order Dry Chillies." target="_blank" class="btn btn-order">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Product 2: Fresh Red Chillies -->
+                <div class="product-card fade-in-up delay-1">
+                    <div class="product-badge badge-fresh">Farm Fresh</div>
+                    <div class="product-image">
+                        <img src="{{ url_for('static', filename='images/fresh_red_chillies.webp') }}" alt="Fresh Red Chillies on plant" loading="lazy" width="400" height="250" style="object-fit: cover;">
+                    </div>
+                    <div class="product-info">
+                        <h3>Fresh Red Chillies</h3>
+                        <p>Farm-fresh red chillies harvested straight from our organic fields. No pesticides, no chemicals — pure and natural.</p>
+                        <a href="https://wa.me/919581682858?text=Hello! I would like to ask for Bulk Price for Fresh Red Chillies." target="_blank" class="bulk-price-tag">💰 Ask for Bulk Price &rarr; WhatsApp</a>
+                        <p class="trust-line"><span class="icon-leaf">♻️</span> Grown on our farm | Chemical-free | 10+ years of organic farming</p>
+                        <a href="https://wa.me/919581682858?text=Hello! I would like to order Fresh Red Chillies." target="_blank" class="btn btn-order">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Product 3: Curry Chilli Powder -->
+                <div class="product-card fade-in-up delay-2">
+                    <div class="product-badge badge-special">Special Blend</div>
+                    <div class="product-image">
+                        <img src="{{ url_for('static', filename='images/media__1772786675923.jpg') }}" alt="Curry Chilli Powder" loading="lazy" width="400" height="250" style="object-fit: cover;">
+                    </div>
+                    <div class="product-info">
+                        <h3>Curry Chilli Powder</h3>
+                        <p>A special blend of organic chillies ground into a rich curry powder. Perfect for deep, authentic curry flavors.</p>
+                        <a href="https://wa.me/919581682858?text=Hello! I would like to ask for Bulk Price for Curry Chilli Powder." target="_blank" class="bulk-price-tag">💰 Ask for Bulk Price &rarr; WhatsApp</a>
+                        <p class="trust-line"><span class="icon-leaf">♻️</span> Grown on our farm | Chemical-free | 10+ years of organic farming</p>
+                        <a href="https://wa.me/919581682858?text=Hello! I would like to order Curry Chilli Powder." target="_blank" class="btn btn-order">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Product 4: Normal Chilli Powder -->
+                <div class="product-card fade-in-up delay-3">
+                    <div class="product-badge badge-pure">Pure & Natural</div>
+                    <div class="product-image">
+                        <img src="{{ url_for('static', filename='images/media__1772786684202.jpg') }}" alt="Normal Chilli Powder" loading="lazy" width="400" height="250" style="object-fit: cover;">
+                    </div>
+                    <div class="product-info">
+                        <h3>Normal Chilli Powder</h3>
+                        <p>Pure organic red chilli powder, ground fresh from our own farm-grown chillies. Clean, bold, and chemical-free.</p>
+                        <a href="https://wa.me/919581682858?text=Hello! I would like to ask for Bulk Price for Normal Chilli Powder." target="_blank" class="bulk-price-tag">💰 Ask for Bulk Price &rarr; WhatsApp</a>
+                        <p class="trust-line"><span class="icon-leaf">♻️</span> Grown on our farm | Chemical-free | 10+ years of organic farming</p>
+                        <a href="https://wa.me/919581682858?text=Hello! I would like to order Normal Chilli Powder." target="_blank" class="btn btn-order">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section-padding">
+        <div class="container text-center">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <p class="section-subtitle">Real experiences from those who trust our natural products</p>
+            
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card slide-in-left">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="quote">"Best organic chilli powder! No chemicals, rich color and amazing aroma. Highly recommend SNF!"</p>
+                    <h5 class="author">&mdash; Rajesh K., Hyderabad</h5>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card pop-in delay-1">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="quote">"Been buying dry chillies from SNF for 3 years. Pure, natural, and farm-fresh quality every time."</p>
+                    <h5 class="author">&mdash; Sunitha M., Vijayawada</h5>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card slide-in-right">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="quote">"National award winning farm — the quality speaks for itself. Our restaurant only uses SNF chillies."</p>
+                    <h5 class="author">&mdash; Hotel Srinivas, Guntur</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave Divider Top of Awards -->
+    <div class="wave-divider-awards">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+    <!-- Awards Section -->
+    <section id="awards" class="awards section-padding">
+        <div class="container text-center">
+            <h2 class="section-title">Awards & Appreciations</h2>
+            <p class="section-subtitle">Recognized for our unwavering commitment to natural farming.</p>
+            
+            <div class="awards-gallery pop-in delay-1">
+                <div class="award-item">
+                    <a href="{{ url_for('static', filename='images/media__1772788666788.jpg') }}" data-lightbox="awards" data-title="Award Press Feature">
+                        <img src="{{ url_for('static', filename='images/media__1772788666788.jpg') }}" alt="Award Press Feature" loading="lazy" width="300" height="220" style="object-fit: cover;">
+                    </a>
+                    <div class="award-caption">
+                        <h4>Press Feature</h4>
+                        <p>Recognized for organic farming excellence.</p>
+                    </div>
+                </div>
+                <div class="award-item">
+                    <a href="{{ url_for('static', filename='images/media__1772788673974.jpg') }}" data-lightbox="awards" data-title="Receiving Award on Stage">
+                        <img src="{{ url_for('static', filename='images/media__1772788673974.jpg') }}" alt="Receiving Award on Stage" loading="lazy" width="300" height="220" style="object-fit: cover;">
+                    </a>
+                    <div class="award-caption">
+                        <h4>State Level Award</h4>
+                        <p>Honored for sustainable practices.</p>
+                    </div>
+                </div>
+                <div class="award-item">
+                    <a href="{{ url_for('static', filename='images/media__1772788680581.jpg') }}" data-lightbox="awards" data-title="Newspaper Feature on Organic Farming">
+                        <img src="{{ url_for('static', filename='images/media__1772788680581.jpg') }}" alt="Newspaper Feature on Organic Farming" loading="lazy" width="300" height="220" style="object-fit: cover;">
+                    </a>
+                    <div class="award-caption">
+                        <h4>Media Recognition</h4>
+                        <p>Featured in leading regional daily.</p>
+                    </div>
+                </div>
+                <div class="award-item">
+                    <a href="{{ url_for('static', filename='images/media__1772788687113.jpg') }}" data-lightbox="awards" data-title="Award Press Snippet">
+                        <img src="{{ url_for('static', filename='images/media__1772788687113.jpg') }}" alt="Award Press Snippet" loading="lazy" width="300" height="220" style="object-fit: cover;">
+                    </a>
+                    <div class="award-caption">
+                        <h4>Outstanding Farmer</h4>
+                        <p>Awarded for 10+ years of dedication.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave Divider Top of Videos -->
+    <div class="wave-divider-products">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M985.66,92.83C906.67,72,823.78,31,741.39,14.14,659.09-3.2,573.29-2.19,490.9,14.53,433.1,26.26,376.94,45.6,318.9,56.39c-67.81,12.61-144.29,19.8-214.34,3l-.56,0H0V120H1200V0C1132.19,15.82,1055.71,74.35,985.66,92.83Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+    <!-- Videos & Process Section -->
+    <section id="videos" class="videos section-padding bg-cream bg-pattern">
+        <div class="container text-center">
+            <h2 class="section-title">Our Farming Process</h2>
+            <p class="section-subtitle">See how we grow 100% organic chillies</p>
+            
+            <div class="videos-grid pop-in delay-1">
+                <!-- Video 1 -->
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/jPyuiBtZ3DY" title="SNF Natural Farming Process 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-caption">
+                        <h4>Natural Farming Process Overview</h4>
+                    </div>
+                </div>
+                
+                <!-- Video 2 -->
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/oTKK-jdshSY" title="SNF Natural Farming Process 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-caption">
+                        <h4>Soil Preparation & Cultivation</h4>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <!-- Added rel=0 and origin to fix potential playback issues on localhost -->
+                        <iframe src="https://www.youtube.com/embed/PKXZnykr4wA?rel=0" title="SNF Natural Farming Process 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-caption">
+                        <h4>Harvesting & Drying Chillies</h4>
+                    </div>
+                </div>
+
+                <!-- Video 4 -->
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/OlNbAFO4CDc" title="SNF Natural Farming Process 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-caption">
+                        <h4>Processing & Powdering</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="video-channel-cta mt-4">Follow <a href="https://youtube.com/@seniorjournalistsesharao?si=aEf0HsQdr5fQaBNl" target="_blank" class="link-text font-weight-bold">Senior Journalist Sesharao</a> on YouTube for more insights.</p>
+        </div>
+    </section>
+
+    <!-- Sustainable Farming Practices Section -->
+    <section id="practices" class="practices section-padding bg-cream bg-pattern">
+        <div class="container text-center">
+            <h2 class="section-title">Our Sustainable Farming Practices</h2>
+            <p class="section-subtitle">How we naturally grow healthier and stronger chillies.</p>
+            
+            <div class="practice-grid">
+                <div class="practice-card">
+                    <div class="practice-icon"><i class="fa-solid fa-leaf"></i></div>
+                    <h4>Intercropping for<br>Plant Strength</h4>
+                    <p>We grow supporting crops between our chilli plants to naturally improve soil health and resilience.</p>
+                </div>
+                <div class="practice-card">
+                    <div class="practice-icon"><i class="fa-solid fa-seedling"></i></div>
+                    <h4>Natural Soil<br>Enrichment</h4>
+                    <p>We enrich our land exclusively with organic compost and natural farming methods—zero chemicals.</p>
+                </div>
+                <div class="practice-card">
+                    <div class="practice-icon"><i class="fa-solid fa-certificate"></i></div>
+                    <h4>Chemical-Free<br>Farming</h4>
+                    <p>Our farm strictly avoids all synthetic fertilizers and harmful chemical pesticides.</p>
+                </div>
+                <div class="practice-card">
+                    <div class="practice-icon"><i class="fa-solid fa-sun"></i></div>
+                    <h4>Traditional<br>Sun-Drying</h4>
+                    <p>Our chillies are naturally sun-dried to perfectly preserve their authentic flavor and deep color.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Farm Gallery Section -->
+    <section id="gallery" class="gallery section-padding bg-cream">
+        <div class="container text-center">
+            <h2 class="section-title">Our Farm Gallery</h2>
+            <p class="section-subtitle">A glimpse of our natural farming practices.</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <img src="{{ url_for('static', filename='images/farmgallery2.jpeg') }}" alt="Farmer training and farm visits" loading="lazy" width="400" height="300" style="object-fit: cover;">
+                        <div class="gallery-overlay">
+                            <p class="gallery-caption">Farmer training and farm visits</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <img src="{{ url_for('static', filename='images/farmgallery3.jpeg') }}" alt="Harvested chillies drying" loading="lazy" width="400" height="300" style="object-fit: cover;">
+                        <div class="gallery-overlay">
+                            <p class="gallery-caption">Harvested chillies drying</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <img src="{{ url_for('static', filename='images/farmgallery4.jpeg') }}" alt="Natural chilli cultivation" loading="lazy" width="400" height="300" style="object-fit: cover;">
+                        <div class="gallery-overlay">
+                            <p class="gallery-caption">Natural chilli cultivation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <img src="{{ url_for('static', filename='images/farmgallery7.jpeg') }}" alt="Traditional natural farming" loading="lazy" width="400" height="300" style="object-fit: cover;">
+                        <div class="gallery-overlay">
+                            <p class="gallery-caption">Traditional natural farming</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave Divider Top of Contact -->
+    <div class="wave-divider-top">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+    <!-- Contact & Orders Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container contact-container">
+            <div class="contact-info slide-in-left">
+                <h2 class="section-title">Order Now / Contact Us</h2>
+                <p>We'd love to hear from you! Whether you want to place a bulk order or learn more about our farming practices.</p>
+                
+                <ul class="contact-details">
+                    <li>
+                        <strong>📞 Phone:</strong> <a href="tel:+918790682858">+91 8790682858</a>
+                    </li>
+                    <li>
+                        <strong>💬 WhatsApp:</strong> <a href="https://wa.me/919581682858" target="_blank">+91 9581682858</a>
+                    </li>
+                    <li>
+                        <strong>📍 Location:</strong> Palnadu District, Pedakurapadu mandal, Pedakurapadu village, Andhra Pradesh
+                        <div class="map-container mt-3">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.974864147774!2d79.97554907514332!3d16.42611718428865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35fdfffffffffb%3A0x673dbb15c92c81d8!2sPedakurapadu%2C%20Andhra%20Pradesh%20522436!5e0!3m2!1sen!2sin!4v1714479901119!5m2!1sen!2sin" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </li>
+                </ul>
+
+                <a href="https://wa.me/919581682858?text=Hello SNF Natural Farming, I would like to place an order." target="_blank" class="btn btn-whatsapp mb-4">
+                    💬 Order via WhatsApp
+                </a>
+
+                <div class="social-links mt-4">
+                    <h4>Follow Us</h4>
+                    <div class="d-flex gap-4">
+                        <a href="https://www.instagram.com/sesharaoseniorjournalist?igsh=eXR6OGdxZjdudHNx" target="_blank" class="social-icon-only" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://youtube.com/@seniorjournalistsesharao?si=aEf0HsQdr5fQaBNl" target="_blank" class="social-icon-only" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form slide-in-right">
+                <form action="#" method="POST" id="mainContactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon">👤</span>
+                            <input type="text" id="name" name="name" required placeholder="Your Full Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon">📞</span>
+                            <input type="tel" id="phone" name="phone" required placeholder="Your Phone Number">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message / Enquiry</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon align-top mt-3">💬</span>
+                            <textarea id="message" name="message" rows="4" required placeholder="What would you like to ask or order?"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full btn-lg">Submit Enquiry</button>
+                </form>
+                <div id="formSuccessMessage" class="form-success-message" style="display: none;">
+                    <h4>✅ Success!</h4>
+                    <p>Thank you! Your enquiry has been submitted. We will contact you shortly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <img src="{{ url_for('static', filename='images/snf_logo_premium.png') }}" class="footer-logo" alt="SNF Logo" loading="lazy" width="150" height="60">
+                <p>100% Natural & Organic Farming.<br>Zero Chemicals. Zero Pesticides.</p>
+                <p class="footer-location">📍 Pedakurapadu Village, Palnadu District, Andhra Pradesh</p>
+                <p class="footer-phone">📞 +91 8790682858</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Connect</h4>
+                <div class="d-flex flex-column gap-3">
+                    <a href="https://www.instagram.com/sesharaoseniorjournalist?igsh=eXR6OGdxZjdudHNx" target="_blank" class="footer-social-link">
+                        <i class="fab fa-instagram social-icon-brand"></i> Instagram
+                    </a>
+                    <a href="https://youtube.com/@seniorjournalistsesharao?si=aEf0HsQdr5fQaBNl" target="_blank" class="footer-social-link">
+                        <i class="fab fa-youtube social-icon-brand"></i> YouTube
+                    </a>
+                    <a href="https://wa.me/919581682858" target="_blank" class="footer-social-link">
+                        <i class="fab fa-whatsapp social-icon-brand"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 SNF Natural Farming. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919581682858" class="floating-wa-btn" target="_blank" aria-label="Order via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <div class="pulse-ring"></div>
+        <span class="tooltip">Order via WhatsApp</span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
